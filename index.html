@@ -1,220 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kolawole Babalola — Web Developer</title>
-  <meta name="description" content="Kolawole Babalola is a web developer in Lagos, Nigeria, building fast, modern, conversion-focused websites for businesses.">
-  <meta property="og:title" content="Kolawole Babalola — Web Developer">
-  <meta property="og:description" content="Fast, modern, conversion-focused websites for businesses.">
-  <meta property="og:type" content="website">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Kolawole Babalola — web developer in Lagos, Nigeria building fast, modern, conversion-focused websites for businesses, schools and organisations." />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Kolawole Babalola — Web Developer" />
+  <meta property="og:description" content="Web developer building fast, modern, conversion-focused websites." />
+  <meta name="theme-color" content="#0f172a" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-weight='bold' fill='%2338bdf8'>K</text></svg>" />
 </head>
 <body>
-
-  <header class="nav" id="top">
-    <div class="container nav-inner">
-      <a href="#top" class="logo">KB<span>.</span></a>
-      <nav class="nav-links" id="navLinks">
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="nav__logo" aria-label="Home">KB<span>.</span></a>
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
         <a href="#about">About</a>
-        <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
-        <a href="#contact" class="btn btn-small">Contact</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="mailto:kolawolebabalola721@gmail.com" class="btn btn--sm">Hire me</a>
       </nav>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
   <main>
-    <!-- HERO -->
-    <section class="hero container">
-      <div class="hero-text reveal">
-        <p class="eyebrow">Hi, I'm Kolawole Babalola 👋</p>
-        <h1>I build <span class="accent">fast, modern websites</span> that win customers.</h1>
-        <p class="lead">
-          Web developer based in Lagos, Nigeria. I help businesses, schools and
-          organisations get online with clean, responsive, SEO-ready websites.
-        </p>
-        <div class="hero-cta">
-          <a href="#projects" class="btn">View my work</a>
-          <a href="#contact" class="btn btn-outline">Get in touch</a>
-        </div>
-        <div class="hero-meta">
-          <a href="https://github.com/beekayjay" target="_blank" rel="noopener" aria-label="GitHub">
-            <svg viewBox="0 0 16 16" width="20" height="20" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-          </a>
-          <span class="dot"></span>
-          <span>Lagos, Nigeria</span>
-        </div>
-      </div>
-      <div class="hero-photo reveal">
-        <div class="photo-ring">
-          <img src="my_headshot.jpeg" alt="Portrait of Kolawole Babalola">
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="section container">
-      <h2 class="section-title reveal"><span class="num">01</span> About me</h2>
-      <div class="about-grid reveal">
-        <p>
-          I'm a web developer focused on building websites that actually work for the businesses
-          behind them — fast to load, easy to use on any device, and built to turn visitors into
-          customers. I work with businesses, schools and organisations to bring their
-          services online.
-        </p>
-        <p>
-          I care about the details that most sites skip: search-engine visibility, structured data,
-          performance, and clear calls-to-action. My client work spans opticians, children's
-          education centres, educational consultancies and tech training hubs — all live in
-          production at their own domains.
-        </p>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="section container">
-      <h2 class="section-title reveal"><span class="num">02</span> Featured projects</h2>
-
-      <article class="project-card reveal">
-        <div class="project-info">
-          <p class="project-tag">Client work · Live in production</p>
-          <h3>LordSolace Optical Venture</h3>
-          <p>
-            A modern, responsive one-page website for an optician at Tinubu Square, Lagos Island —
-            built with plain HTML, CSS and JavaScript, no framework or build step.
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <p class="hero__eyebrow">Web Developer · Lagos, Nigeria</p>
+          <h1 class="hero__title">Kolawole <span>Babalola</span></h1>
+          <p class="hero__lead">
+            I build fast, modern websites that win customers — with
+            <strong>clean design</strong>, <strong>strong SEO</strong>, and
+            <strong>conversion-focused pages</strong> for businesses, schools and organisations.
           </p>
-          <ul class="project-points">
-            <li>Gradient hero, glassmorphism navigation and scroll-reveal animations</li>
-            <li>Strong local SEO: Optician + FAQPage structured data (JSON-LD), Open Graph cards, sitemap</li>
-            <li>Conversion-focused with WhatsApp and click-to-call CTAs throughout</li>
-            <li>Fully responsive — verified across phone, tablet and desktop</li>
-          </ul>
-          <div class="tags">
-            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>SEO</span><span>JSON-LD</span>
+          <div class="hero__cta">
+            <a href="#contact" class="btn btn--primary">Get in touch</a>
+            <a href="#projects" class="btn btn--ghost">View my work</a>
           </div>
-          <div class="project-links">
-            <a class="btn btn-small" href="https://lordsolaceoptical.com.ng" target="_blank" rel="noopener">Visit live site ↗</a>
-            <a class="btn btn-small btn-outline" href="https://github.com/beekayjay/lordsolace-optical" target="_blank" rel="noopener">View code on GitHub</a>
+          <div class="hero__socials">
+            <a href="mailto:kolawolebabalola721@gmail.com" aria-label="Email">Email</a>
+            <a href="https://github.com/beekayjay" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
           </div>
         </div>
-        <a class="project-preview" href="https://lordsolaceoptical.com.ng" target="_blank" rel="noopener" aria-label="Open LordSolace Optical live site">
-          <div class="browser-chrome">
-            <span></span><span></span><span></span>
-            <p>lordsolaceoptical.com.ng</p>
-          </div>
-          <div class="preview-body">
-            <p class="preview-brand">LordSolace<br>Optical Venture</p>
-            <p class="preview-sub">See clearly. Live fully.</p>
-          </div>
-        </a>
-      </article>
 
-      <div class="project-grid">
-        <article class="mini-project reveal">
-          <div class="browser-chrome">
-            <span></span><span></span><span></span>
-            <p>mannacentre.com</p>
+        <div class="hero__portrait reveal">
+          <div class="portrait">
+            <div class="portrait__ring" aria-hidden="true"></div>
+            <div class="portrait__glow" aria-hidden="true"></div>
+            <div class="portrait__frame">
+              <img src="my_headshot.jpeg" alt="Portrait of Kolawole Babalola" />
+            </div>
+            <div class="portrait__badge portrait__badge--top" aria-hidden="true">
+              <span class="dot"></span> Available for projects
+            </div>
+            <div class="portrait__badge portrait__badge--bottom" aria-hidden="true">
+              <strong>WEB</strong> Design &amp; Development
+            </div>
+            <div class="portrait__shape portrait__shape--a" aria-hidden="true"></div>
+            <div class="portrait__shape portrait__shape--b" aria-hidden="true"></div>
           </div>
-          <div class="mini-body">
+        </div>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="Scroll to About">↓</a>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__num">01</span>
+          <h2>About</h2>
+        </div>
+        <div class="about">
+          <div class="about__text reveal">
+            <p>
+              I'm a web developer based in <strong>Lagos, Nigeria</strong>, focused on building
+              websites that actually work for the businesses behind them — fast to load, easy to
+              use on any device, and built to turn visitors into customers.
+            </p>
+            <p>
+              I care about the details that most sites skip: <strong>search-engine visibility</strong>,
+              <strong>structured data</strong>, <strong>performance</strong>, and clear calls-to-action.
+              My client work spans <strong>opticians, children's education centres, educational
+              consultancies and tech training hubs</strong> — all live in production at their own domains.
+            </p>
+            <p>
+              Whether it's a hand-coded static site or a WordPress build, my goal is the same:
+              a website that looks professional, ranks in local search, and
+              <strong>brings in customers</strong>.
+            </p>
+          </div>
+          <aside class="about__facts reveal">
+            <div class="fact"><span class="fact__k">Location</span><span class="fact__v">Lagos, Nigeria</span></div>
+            <div class="fact"><span class="fact__k">Focus</span><span class="fact__v">Web Design &amp; Development</span></div>
+            <div class="fact"><span class="fact__k">Availability</span><span class="fact__v">Open to new projects</span></div>
+            <div class="fact"><span class="fact__k">GitHub</span><span class="fact__v">@beekayjay</span></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__num">02</span>
+          <h2>Skills</h2>
+        </div>
+        <div class="skills">
+          <div class="skills__group reveal">
+            <h3>Front-end</h3>
+            <ul class="tags">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>Responsive layouts</li>
+              <li>Animations &amp; interactions</li>
+              <li>Bootstrap</li>
+            </ul>
+          </div>
+          <div class="skills__group reveal">
+            <h3>CMS &amp; Platforms</h3>
+            <ul class="tags">
+              <li>WordPress</li>
+              <li>Page builders</li>
+              <li>Custom themes</li>
+              <li>Content management</li>
+            </ul>
+          </div>
+          <div class="skills__group reveal">
+            <h3>SEO &amp; Performance</h3>
+            <ul class="tags">
+              <li>Structured data (JSON-LD)</li>
+              <li>Open Graph</li>
+              <li>Sitemaps</li>
+              <li>Local SEO</li>
+              <li>Fast static sites</li>
+            </ul>
+          </div>
+          <div class="skills__group reveal">
+            <h3>Deployment &amp; Business</h3>
+            <ul class="tags">
+              <li>Vercel</li>
+              <li>GitHub Pages</li>
+              <li>Custom domains</li>
+              <li>WhatsApp &amp; click-to-call CTAs</li>
+              <li>Conversion-focused design</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__num">03</span>
+          <h2>Projects</h2>
+        </div>
+        <p class="section__intro reveal muted">
+          Client websites — all live in production at their own domains.
+        </p>
+
+        <!-- Featured project -->
+        <article class="card card--featured reveal">
+          <div class="card__tag">Featured · Client work</div>
+          <h3>Click4Tech Explorers Hub</h3>
+          <p>
+            Website for an EdTech organisation running S.T.E.A.M. enrichment programmes —
+            coding, robotics, web design &amp; development, AI, cybersecurity and digital
+            marketing for young learners across Nigeria and beyond. Built to showcase
+            programmes, instructors and enrolment options for online, home and in-school classes.
+          </p>
+          <div class="card__tags"><span>HTML</span><span>Bootstrap</span><span>JavaScript</span><span>EdTech</span></div>
+          <a href="https://click4techexplorers.com" target="_blank" rel="noopener" class="card__link">Visit live site →</a>
+        </article>
+
+        <div class="projects">
+          <article class="card reveal">
+            <div class="card__tag">Client work</div>
+            <h3>LordSolace Optical Venture</h3>
+            <p>Modern one-page site for an optician on Lagos Island — gradient hero, glassmorphism navigation, local SEO with Optician + FAQPage structured data, and WhatsApp / click-to-call CTAs throughout.</p>
+            <div class="card__tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>SEO</span></div>
+            <a href="https://lordsolaceoptical.com.ng" target="_blank" rel="noopener" class="card__link">Visit live site →</a>
+          </article>
+          <article class="card reveal">
+            <div class="card__tag">Client work</div>
             <h3>Manna Children Centre</h3>
-            <p class="mini-tagline">"…every child matters"</p>
-            <p>
-              Website for a children's education centre — presenting its programmes,
-              mission and admissions with a warm, family-friendly design.
-            </p>
-            <div class="tags">
-              <span>WordPress</span><span>Responsive</span><span>Education</span>
-            </div>
-            <a class="btn btn-small btn-outline" href="https://mannacentre.com" target="_blank" rel="noopener">Visit live site ↗</a>
-          </div>
-        </article>
-
-        <article class="mini-project reveal">
-          <div class="browser-chrome">
-            <span></span><span></span><span></span>
-            <p>leadmode.com</p>
-          </div>
-          <div class="mini-body">
+            <p>Website for a children's education centre — "…every child matters." Presents the centre's programmes, mission and admissions with a warm, family-friendly design.</p>
+            <div class="card__tags"><span>WordPress</span><span>Responsive</span><span>Education</span></div>
+            <a href="https://mannacentre.com" target="_blank" rel="noopener" class="card__link">Visit live site →</a>
+          </article>
+          <article class="card reveal">
+            <div class="card__tag">Client work</div>
             <h3>Leadmode</h3>
-            <p class="mini-tagline">World-class educational consultant</p>
-            <p>
-              Corporate website for an educational consultancy — showcasing services
-              and guiding prospective students through enquiries.
-            </p>
-            <div class="tags">
-              <span>WordPress</span><span>Responsive</span><span>Consulting</span>
-            </div>
-            <a class="btn btn-small btn-outline" href="https://leadmode.com" target="_blank" rel="noopener">Visit live site ↗</a>
-          </div>
-        </article>
-
-        <article class="mini-project reveal">
-          <div class="browser-chrome">
-            <span></span><span></span><span></span>
-            <p>click4techexplorers.com</p>
-          </div>
-          <div class="mini-body">
-            <h3>Click4Tech Explorers Hub</h3>
-            <p class="mini-tagline">Express your creativity through tech</p>
-            <p>
-              Website for an EdTech hub running S.T.E.A.M. programmes — coding, robotics,
-              AI, cybersecurity and digital marketing for young learners.
-            </p>
-            <div class="tags">
-              <span>HTML</span><span>Bootstrap</span><span>EdTech</span>
-            </div>
-            <a class="btn btn-small btn-outline" href="https://click4techexplorers.com" target="_blank" rel="noopener">Visit live site ↗</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills" class="section container">
-      <h2 class="section-title reveal"><span class="num">03</span> What I work with</h2>
-      <div class="skills-grid">
-        <div class="skill-card reveal">
-          <h4>Front-end</h4>
-          <p>HTML5, CSS3, JavaScript, responsive layouts, animations &amp; interactions</p>
-        </div>
-        <div class="skill-card reveal">
-          <h4>SEO &amp; Performance</h4>
-          <p>Structured data (JSON-LD), Open Graph, sitemaps, fast static sites</p>
-        </div>
-        <div class="skill-card reveal">
-          <h4>Deployment</h4>
-          <p>Vercel, custom domains, GitHub workflows, static hosting</p>
-        </div>
-        <div class="skill-card reveal">
-          <h4>Business-first design</h4>
-          <p>Conversion-focused pages, WhatsApp &amp; click-to-call integration, local search</p>
+            <p>Corporate website for a world-class educational consultancy — showcasing services and guiding prospective students through enquiries.</p>
+            <div class="card__tags"><span>WordPress</span><span>Responsive</span><span>Consulting</span></div>
+            <a href="https://leadmode.com" target="_blank" rel="noopener" class="card__link">Visit live site →</a>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section container contact">
-      <h2 class="section-title reveal"><span class="num">04</span> Let's work together</h2>
-      <p class="lead reveal">
-        Have a project in mind, or want a website that brings in customers?
-        I'd love to hear from you.
-      </p>
-      <div class="contact-actions reveal">
-        <a class="btn" href="mailto:kolawolebabalola721@gmail.com">Email me</a>
-        <a class="btn btn-outline" href="https://github.com/beekayjay" target="_blank" rel="noopener">GitHub</a>
+    <!-- ===== CONTACT ===== -->
+    <section class="section section--alt" id="contact">
+      <div class="container contact">
+        <div class="section__head reveal">
+          <span class="section__num">04</span>
+          <h2>Contact</h2>
+        </div>
+        <p class="contact__lead reveal">
+          Have a project in mind, or want a website that brings in customers? Let's talk.
+        </p>
+        <div class="contact__actions reveal">
+          <a href="mailto:kolawolebabalola721@gmail.com" class="btn btn--primary">kolawolebabalola721@gmail.com</a>
+          <a href="https://github.com/beekayjay" target="_blank" rel="noopener" class="btn btn--ghost">GitHub</a>
+        </div>
       </div>
     </section>
   </main>
 
+  <!-- ===== FOOTER ===== -->
   <footer class="footer">
-    <p>© <span id="year"></span> Kolawole Babalola · Built with plain HTML, CSS &amp; JavaScript</p>
+    <div class="container footer__inner">
+      <span>&copy; <span id="year"></span> Kolawole Babalola</span>
+      <a href="#home" class="footer__top">Back to top ↑</a>
+    </div>
   </footer>
 
   <script src="main.js"></script>
