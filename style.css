@@ -234,6 +234,9 @@ img, svg, video { max-width: 100%; height: auto; }
 }
 .card__media img { display: block; width: 100%; height: auto; transition: transform .3s ease; }
 .card--featured:hover .card__media img { transform: scale(1.02); }
+.card__media--thumb { margin-bottom: 0.35rem; box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3); }
+.card__media--thumb img { aspect-ratio: 16 / 10; object-fit: cover; object-position: top; }
+.card:hover .card__media--thumb img { transform: scale(1.03); }
 
 /* ===== Contact ===== */
 .contact { text-align: center; }
